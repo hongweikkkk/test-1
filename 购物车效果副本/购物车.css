@@ -1,0 +1,158 @@
+*{
+  margin: 0px;
+  padding: 0px;
+}
+body{
+	 font: 400 12px/12px "宋体";
+}
+ul{
+   list-style: none;
+}
+#nav{
+	 width: 100%;
+	 height: 50px;
+	 
+}
+#header{
+	    width: 1000px;
+	    height: 50px;
+	    border: 1px solid lightgray;
+	    margin: 0 auto;
+	    background: red;
+}
+#header img{
+	         float: left;
+	         color: white;
+	        /* border: 1px solid blue;*/
+	         width: 12px;
+	         height: 12px;
+	         margin: 20px;
+
+
+}
+#header ul{
+           overflow: hidden;
+           list-style: none;
+}
+#header ul li{
+	          float: left;
+	          font: 600 12px/12px "宋体";
+	          height: 50px;
+	          line-height: 50px;
+	          text-align: right;
+	          color: white;
+	          width: 400px;
+	         
+	          margin-left: 50px;
+}
+#contain{
+	     width: 1000px;
+	     height: 1360px;
+	     border: 1px solid lightgray;
+	     margin: 0 auto;
+	     position: relative;
+
+
+}
+#contain #checkbox_1{
+	                 width: 1000px;
+	                 height: 30px;
+	                 border-bottom: 1px solid lightgray;
+	                 text-align: left;
+	                 line-height: 30px;
+	                /* border: 1px solid black;*/
+}
+#kk{
+	
+	margin-left: 10px;
+
+}
+#ul01{
+	  float: left;
+}
+#ul01 ul li{
+	        margin: 10px;
+	       
+}
+#ul01 ul li .img1{
+	              vertical-align: middle;
+}
+#ul02{
+	  float: right;
+}
+#ul02 ul li p{
+	          margin-top: 15px;
+}
+#ul02 ul li .number{
+	                color: red;
+	                font-size: 14px;
+	                
+
+}
+#ul02 li{
+	     margin: 14px;
+	     position: relative;
+	    /* border:1px solid black;*/
+	     height: 100px;
+
+}
+.count{
+	   position: absolute;
+	   right: 0px;
+	   bottom: 30px;
+	  /* overflow: hidden;*/
+
+}
+.count .minus{
+	          display: inline-block;
+	          width: 15px;
+	          height: 15px;
+	          background: lightgray;
+	          text-align: center;
+	          line-height: 15px;
+	          cursor: pointer;
+	         /* float: right;*/
+}
+.count .plus{
+	         display: inline-block;
+	          width: 15px;
+	          height: 15px;
+	          background: lightgray;
+	          text-align: center;
+	          line-height: 15px;
+	          cursor: pointer;
+	         /* float: left;*/
+}
+.count .count_num{
+	              display: inline-block;
+	              width: 15px;
+	              height: 15px;
+	              line-height: 15px;
+	              text-align: center;
+	              border: 1px solid black;
+}
+#totle{
+	   position: absolute;
+	   left: 15px;
+	   bottom: 5px;
+}
+.current{
+	     color: red;
+	     font: 800 15px/15px "宋体";
+}
+#totle p #money{
+	            padding-left: 8px;
+}
+#totle a{
+	    text-decoration: none;
+	    display: inline-block;
+	    width: 500px;
+	    height: 50px;
+	    background: red;
+	    line-height: 50px;
+	    text-align: center;
+	    position: absolute;
+	    left: 486px;
+	    bottom: 0px;
+	    color: white;
+}
