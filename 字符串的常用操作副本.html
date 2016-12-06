@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>字符串的常用操作</title>
+</head>
+<body>
+	<script type="text/javascript">
+		var str = "飒飒 璇璇";
+		// 通过字符串的位置返回字符
+		console.log(str.length);
+		console.log(str.charAt(2));
+		console.log(str.charCodeAt(2));
+		// 该方法是String的静态方法，字符串中的每个字符都由单独的数字Unicode编码指定，所以
+		//所以可以通过该方法找到Unicode对应的字符
+		console.log(String.fromCharCode(123,100,99,88,70));
+
+         //根据字符返回字符串的位置  ,不能使用正则表达式匹配的字符
+		 var str = 'abcdeabcdeaF';
+		 console.log(str.indexOf("a"));//   返回的是索引号为0
+		 console.log(str.indexOf("b"));//   返回的是索引号是1
+		 console.log(str.lastIndexOf("a"));  //返回的索引号是10，即最后一个a的位置
+         console.log(str.lastIndexOf("a",6)); //索引号为6之前的字符串中的最后一个a的位置
+         
+         console.log(str.lastIndexOf("bc")); //返回的是索引号6
+         console.log(str.indexOf("f"));
+         // console.log(str.indexOf(/f/i));
+         
+         //也是根据字符返回字符串的位置，而且它可以使用正则表达式来找到该字符的位置
+         var str = "abcDEFa";
+         console.log(str.search("c")); //返回的是索引号2
+         console.log(str.search("d"));  //如果没有该字符则返回的是-1
+         console.log(str.search(/d/i));//使用的是正则，／表达式／附加参数 i是不区分大小写
+         // console.log(str.search(/a/g));
+         
+         // 语法含义：match()方法可在字符串内检索指定的值，或找到一个或多个正则表达式的匹配。
+         // 如果参数中传入的是子字符串或是没有进行全局匹配的正则表达式，那么match()方法会从开始位置执行一次匹配，如果没有匹配到结果，则返回null。否则则会返回一个数组，该数组的第0个元素存放的是匹配文本，除此之外，返回的数组还含有两个对象属性index和input，分别表示匹配文本的起始字符索引和stringObject 的引用(即原字符串)。
+         var str = '1a2b3c4d5e';
+         console.log(str.match("h"));  //如果没有该字符则返回的是null
+         console.log(str.match("b"));
+         console.log(str.match(/\d/g));
+
+
+	</script>
+</body>
+</html>
